@@ -1,0 +1,29 @@
+body{
+    margin: 1vh 1vw;
+    background-color: #c06ec7;
+}
+
+ul, fieldset{
+    border: 1px solid;
+    background-color: #f1dff6;
+}
+
+ul{
+    padding: 0;
+    font-family: monospace;
+}
+
+li{
+    list-style-type: none;
+    padding: 02em 0.5em;
+    background-color: #c06ec7;
+}
+
+li:nth-of-type(even){
+    background-color: inherit;
+}
+
+button{
+    background-color:#f1dff6;
+    color:#AEC6CF;
+}

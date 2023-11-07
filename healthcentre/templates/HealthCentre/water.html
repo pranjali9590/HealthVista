@@ -1,0 +1,45 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'css/water.css' %}">
+
+    <title>Daily Drink Water Goal using JavaScript - @code.scientist x @codingtorque</title>
+</head>
+
+<body background="{% static 'healthcentre/images/22.jpg' %}" style="background-size: auto auto;">
+    <!-- Further code here -->
+    <h1>Drink Water</h1>
+<h3>Goal: 2 Liters</h3>
+
+<div class="cup">
+    <div class="remained" id="remained">
+        <span id="liters"></span>
+        <small>Remained</small>
+    </div>
+
+    <div class="percentage" id="percentage"></div>
+</div>
+
+<p class="text">Select how many glasses of water that you have drank</p>
+
+<div class="cups">
+    <div class="cup cup-small">250 ml</div>
+    <div class="cup cup-small">250 ml</div>
+    <div class="cup cup-small">250 ml</div>
+    <div class="cup cup-small">250 ml</div>
+    <div class="cup cup-small">250 ml</div>
+    <div class="cup cup-small">250 ml</div>
+    <div class="cup cup-small">250 ml</div>
+    <div class="cup cup-small">250 ml</div>
+</div>
+    <script src="{% static 'healthcentre/javascript/water.js' %}"></script>
+</body>
+
+</html>

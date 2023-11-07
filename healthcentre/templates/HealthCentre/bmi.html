@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <!-- Your existing meta tags, title, and styles -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="{% static 'css/bmi.css' %}">
+    <script src="{% static 'healthcentre/javascript/bmi.js' %}"></script>
+</head>
+
+
+<body>
+<div class="main-container">
+
+    <div class="container one">
+
+            <!-- BMI Information Section -->
+        <div class="bmi-info" aria-label="BMI Ranges and Health Implications">
+            <h3>BMI Ranges and Health Implications</h3>
+            <ul>
+                <li>Underweight: BMI &lt; 18.5 - Being underweight may indicate inadequate nutrition or potential health risks.</li>
+                <li>Normal Weight: BMI 18.5 - 24.9 - Falling within the normal weight range suggests a balanced weight for height.</li>
+                <li>Overweight: BMI 25 - 29.9 - Being overweight indicates an excess of body weight compared to height.</li>
+                <li>Obesity (Class I): BMI 30 - 34.9 - Class I obesity indicates moderate obesity.</li>
+                <li>Obesity (Class II): BMI 35 - 39.9 - Class II obesity indicates severe obesity.</li>
+                <li>Obesity (Class III): BMI &ge; 40 - Class III obesity is categorized as extreme or morbid obesity.</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <div class="container two">
+
+            <h1>BMI Calculator</h1>
+
+            <div class="content1">
+                <div class="height">
+                    <label for="height">Height</label>
+                    <input type="number" id="height" required aria-label="Enter your height">
+                </div>
+    
+                <div class="weight">
+                <label for="weight">Weight</label>
+                <input type="number" id="weight" required aria-label="Enter your weight">
+                </div>
+    
+                
+            </div>
+
+            <div class="content2">
+                    <select id="heightUnit" aria-label="Select height unit">
+                        <option value="cm">cm</option>
+                        <option value="feet">feet</option>
+                        </select>
+
+                        <select id="weightUnit" aria-label="Select weight unit">
+                            <option value="kg">kg</option>
+                            <option value="pounds">pounds</option>
+                            </select>
+            </div>
+
+            
+            <div class="buttons">
+            <button onclick="calculateBMI()"><i class="icon">&#128209;</i>Calculate BMI</button>
+            <button class="clear" onclick="clearForm()"><i class="icon">&#128259;</i>Clear</button>
+            </div>
+
+            <div id="result" aria-live="polite" aria-atomic="true"></div>
+    </div>
+    
+</div>
+
+
+</body>
+</html>

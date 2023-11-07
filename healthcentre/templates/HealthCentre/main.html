@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title>State Images</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body background="{% static 'healthcentre/images/22.jpg' %}" style="background-size: auto auto;">
+    <script>
+  function stDropdown(imgid,folder,newimg){
+    document.getElementById(imgid).src= 'static/image/'+newimg+'.png';
+  }
+    </script>
+    <nav>
+        <a href="{% url 'index' %}" class="nav-link">Home</a>
+        <select name="states" onChange="stDropdown('pic','states',this.value)">
+            <option value="india">All states</option>
+            <option value="assam">Assam</option>
+            <option value="chattisgarh">Chattisgarh</option>
+            <option value="madhya-pradesh">Madhya-pradesh</option>
+            <option value="odisha">Odisha</option>
+            <option value="rajasthan">Rajasthan</option>
+            <option value="uttar-pradesh">Uttar Pradesh</option>
+            <option value="bihar">Bihar</option>
+            <option value="jharkhand">Jharkhand</option>
+            <option value="uttarakhand">Uttarakhand</option>
+        </select>
+     
+    </nav>
+    <div class="image-container">
+        <img id="pic" src="{% static 'image/india.png' %}" alt="State Image">
+    </div>
+    <br><br><br>
+    <section style="padding-left: 20px;">
+    <h3>Note:</h3>As seen above,
+            <ul >  
+                <li>The number of cases of acute diseases is high in rural areas</li><br>
+            Possible Reasons: Rural areas are often highly affected by acute diseases due to limited access to healthcare,
+                inadequate infrastructure, lower healthcare education, economic constraints, geographic barriers, 
+                and exposure to occupational hazards. Additionally, lack of sanitation, poor nutrition, and cultural
+                factors can contribute to the higher impact of acute diseases in these regions.
+                <br><br>
+                <li>The number of cases of chronic diseases is high in urban areas</li><br>
+            Possible Reasons: Urban areas face chronic disease risks due to sedentary lifestyles, poor diets, pollution, 
+                stress, and limited healthcare access. These factors lead to conditions like obesity, diabetes, and heart diseases. 
+                Solutions involve urban planning, healthcare improvements, and lifestyle changes.
+
+            </ul>
+        </section>
+        <br><br>
+        <footer style="position: relative;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #3f3f51;
+        color: white;
+        text-align: center;">Data collected from Kaggle</footer>
+   
+</body>
+</html>

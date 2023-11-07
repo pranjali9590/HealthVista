@@ -1,0 +1,44 @@
+{% extends "healthcentre/layout.html" %}
+
+{% block title %}
+HealthVista
+{% endblock %}
+
+{% block bodytag %}
+
+  {% load static %}
+  <body background="{% static 'healthcentre/images/22.jpg' %}" style="background-size: auto auto;">
+
+{% endblock %}
+
+{% block body %}
+    <br>
+
+    <div class="jumbotron jumbotron-fluid" style = "margin-left:5%;margin-right:5%;background:rgba(0,0,0,0.6);color:white;">
+        <div class="container">
+
+            <h1 >Address</h1>
+
+            <p class="lead">Kumarswami layout Teachers colony, DSCE Banglore, Banashankari, Banglore, Karnataka</p>
+            <button class="btn btn-info" >Pin Code : 560063</button>
+
+            <br>
+            <br>
+
+            <h1>Email</h1>
+
+            <p class="lead">Suggestions and feedback are thoroughly welcomed.</p>
+            <button class="btn btn-info" >HealthVista.9590@gmail.com</button>
+
+            <br>
+            <br>
+
+            <h1 >Reception Contact Numbers</h1>
+
+            <p class="lead">Please feel free to call us anytime. 24 x 7 Helpline Availability.</p>
+            <button class="btn btn-info" >Contact Numbers : 0141-3562834, 0141-35682104</button>
+
+        </div>
+    </div>
+
+{% endblock %}

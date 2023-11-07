@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style4.css' %}">
+    <title>Data Analytics</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        .container {
+    position: relative; /* Create a stacking context for pseudo-element */
+}
+
+.container::before {
+    content: "";
+    background-image:url(static/images/graphblue.jpg); /* Replace with your image */
+    opacity: 0.7; /* Adjust the opacity as needed */
+    position: absolute;
+    background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place the pseudo-element below the content */
+}
+
+/* Additional styling for the content */
+h1, p {
+    position: relative; /* Ensure content is above the pseudo-element */
+    z-index: 1;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div>
+        <div class="card" style="width: 18rem; float: right; margin-top: 30px; margin-right: 30px;">
+        <img src="{% static 'healthcentre/images/finger.jpg' %}" class="card-img-top" alt="..." height="200" width="160">
+        <div class="card-body">
+            <p class="card-text">"Data is the new oil, and health is the new wealth."</p>
+        </div>
+        </div>
+    <div style="height: auto; width: 70%; padding: 18px; letter-spacing: 1.3px;">
+        <h2>Data Science in Health:</h2><br>
+        Data science, the art of extracting knowledge from data, has revolutionized healthcare. By leveraging machine learning 
+        algorithms and predictive modeling, medical professionals can now diagnose diseases earlier and predict health trends more
+         accurately. For example, data-driven models have successfully predicted disease outbreaks, enabling timely interventions 
+         and resource allocation. A study by [Reference] demonstrated how an AI-powered model predicted the spread of a contagious 
+         disease with an accuracy rate of over 90%.
+         <br><br>
+         <p>The diverse amplification of big data in all spheres of life, from commerce to transportation makes us realize how indispensable it is in our daily lives. In the same way, big data has been transforming the medical sector, fundamentally changing how the most basic procedures of health monitoring are conducted, and that too by shaping and mapping unstructured information. </p>
+    </div>
+    <br>
+            <div style="height: auto; width: 70%; padding: 18px; letter-spacing: 1.3px;">
+            <h2>Why Do We Use Data Science in Healthcare?</h2>
+           <br>
+           <p>A number of factors make data science indispensable to healthcare in the present day, the most important of them being
+            the competitive demand for valuable information in the health market. The collection of patient data through proper channels 
+            can help provide improved quality healthcare to consumers. From doctors to health insurance providers to institutions, all of
+             them rely on the collection of factual data and its accurate analysis to make well-informed decisions about patients' health situations. </p>  
+Nowadays, diseases can be predicted at the earliest stage with the help of data science in healthcare, that too remotely with innovative appliances 
+powered by Machine learning. Mobile applications and smart devices constantly collect data about heartbeat rates, blood pressure, sugar, and so on, transferring this data to the doctors as real-time updates, who can then devise treatments accordingly.
+            <br>            
+            </div>
+
+    
+            <br><br>
+
+            <div class="card" style="width: 18rem; float: right; margin-top: 30px; margin-right: 30px;">
+            <img src="{% static 'healthcentre/images/tablet.jpg' %}" class="card-img-top" alt="..." height="200" width="160">
+            <div class="card-body">
+                <p class="card-text">“Information is the oil of the 21st century, and analytics is the combustion engine.”</p>
+            </div>
+            </div>
+
+            <div style="height: auto; width: 70%; padding: 18px; letter-spacing: 1.3px;">
+            <h2>Application and Use Cases of Data Science in Healthcare</h2>
+            <p>There are several versions of the ketogenic diet, including:</p>
+            <ul type="disc">
+            <li><strong>Discovering drugs:</strong> The major contribution of data science in the pharmaceutical industry is to provide the groundwork for the synthesis of drugs using Artificial Intelligence. Mutation profiling and the metadata of the patients are used to develop compounds that address the statistical correlation between the attributes.</li>
+            <li><strong>Virtual assistance</strong> Nowadays, chatbots and AI platforms are designed by data scientists to help people get a better idea of their health by putting in certain health information about themselves and getting an accurate diagnosis. Furthermore, these platforms also assist consumers with health insurance policies and better lifestyle guides.  </li>
+            <li><strong>Wearables </strong> The present-day phenomenon of the Internet of Things (IoT), which ensure maximum connectivity, is a blessing to data science. Now when this technology is applied to the medical field, it can help monitor patient health. Nowadays, physical fitness monitors and smartwatches are used by people to track and manage their health. /li>
+            <li><strong>Tracking Patient Health</strong> With the help of data science tools and machine learning algorithms, doctors can detect and track common conditions, like cardiac or respiratory diseases. 
+
+                Data Science tech can also detect the slightest changes in the patient's health indicators and predict possible disorders.</li>
+            <li><strong>Medical Image Analysis </strong>Healthcare professionals often use various imaging techniques like X-Ray, MRI, and CT Scan to visualize your body's internal systems and organs. Deep learning and image recognition technologies in health Data Science allow detection of minute deformities in these scanned images, helping doctors plan an effective treatment strategy. </li>
+            </ul> 
+            <br>
+             </div>
+             <div class="alert alert-warning" role="alert">
+                <strong>SUMMARY</strong><BR>
+                    Data science is essential in health to harness the power of vast medical data, enabling early disease detection and personalized treatment strategies for improved patient outcomes.
+                </div>
+        <br><br>
+
+        <div class="card" style="width: 18rem; float: right; margin-top: 30px; margin-right: 30px;">
+        <img src="{% static 'healthcentre/images/pie.jpg' %}" class="card-img-top" alt="..." height="200" width="160">
+        <div class="card-body">
+            <p class="card-text">"Healthcare isn't just about treating illnesses; it's about utilizing data to prevent them in the first place."</p>
+        </div>
+        </div>
+
+            <div style="height: auto; width: 70%; padding: 18px; letter-spacing: 1.3px;">
+            <h2>Meaning of Healthcare Data Analytics </h2>
+            Healthcare data analytics refers to the process of working on raw datasets related to healthcare and analyzing them to find hidden patterns, trends, etc., thus paving a way for further improvements at patient-level as well as business-level. 
+            <p>Different tools are used to collect this data. Some of the important tools and ways are electronic health records (EHRs), patient portals, master patient indexes (MPIs), online health-related mobile applications, etc. Not only does this help in data-driven informed decision-making, but it also helps in providing a personalized experience and treatment to the patients. </p>
+            
+            <h4>Types of Data Analytics</h4>
+            There are different types of Data Analytics based on the type of problem they solve and the questions they answer. The main three types of Data Analytics are:
+            <ul type="disc">
+            <li><strong>Descriptive Data Analytics</strong> revolves around data and findings related to what has happened already in the past. It does not involve making any inferences or predictions with the data. It is rather a type of analytics that forms the base for further analysis and other types of data analysis. It basically involves collecting historical data and presenting the data in an organized manner for easy understanding. Very basic levels of statistical methods such as average, percentage change calculations, Mean etc. are used in Descriptive Analytics.</li>
+            <li><strong>Predictive Analytics</strong>is the type of data analysis where probabilities are used to forecast possible future events and outcomes. In predictive analytics, complex statistical techniques are used to predict the outcomes. For example- Statistical Data Modeling, Data Mining etc. Predictive Analytics is rather a step towards Machine Learning and Artificial Intelligence which involve predictive models.  </li>
+            <li><strong>Prescriptive Analytics</strong> is the stage in data analysis where the learnings from Descriptive and Predictive Analytics are used to suggest the best actionables for the business problem or challenges. This type of data analytics uses rather complex statistical tools and techniques to figure out the right course of action. Complex algorithms based on internal as well as external data are used to achieve the results. Because of this reason, Prescriptive Analytics is not a routine practice adopted by organizations as it requires specialized tools and statistical processes. </li>
+            </ul> 
+            <br>
+            
+            <div class="alert alert-warning" role="alert">
+            <strong>SUMMARY</strong><BR>
+                Data analytics plays a vital role by extracting actionable insights from healthcare data, optimizing resource allocation and enhancing patient care delivery through evidence-based decision-making.
+            </div>
+
+        </div>
+
+        <br><br>
+
+        <div class="card" style="width: 18rem; float: right; margin-top: 30px; margin-right: 30px;">
+        <img src="{% static 'healthcentre/images/hand.jpg' %}" class="card-img-top" alt="..." height="200" width="160">
+        <div class="card-body">
+            <p class="card-text">"The heartbeat of a healthy society is in the data; analyzing it provides the rhythm for progress."</p>
+        </div>
+        </div>
+
+            <div style="height: auto; width: 70%; padding: 18px; letter-spacing: 1.3px;">
+           
+            <h3>Why is Healthcare Data Analytics Needed ?.</h3>
+            <p>The data analytics market in the healthcare space has only increased over the last few years. Considering the rising costs of medical treatments globally, a proper body of knowledge was needed to reduce the costs at the business-level as well as the professional-level. McKinsey, in one of its reports, states that healthcare expenses constitute 17.6 percent of the GDP in the USA, which is approximately US$600 billion, more than what is the set benchmark for the ideal size of population in the country. This is a serious indicator of bigger trouble. Hence, the usage of healthcare data analytics is being promoted these days.
+</p>
+<p>Data analytics involves scrutinizing large datasets to uncover actionable insights. In healthcare, this translates to optimized hospital operations, enhanced patient care, and informed decision-making. Hospitals use data analytics to streamline patient flows, reduce wait times, and allocate resources efficiently. Research conducted by [Reference] found that hospitals utilizing data analytics reduced patient waiting times by 30% and achieved a 20% increase in resource utilization.</p>
+<p>Healthcare data analytics aims at reducing the cost of healthcare operations and processes. Hence, the treatment cost for patients will gradually go down. Not only this, healthcare data analytics has opened the doors to a plethora of job opportunities for qualified and skilled data analytics professionals. These professionals come with data-driven minds and strategic thinking, which is the need of the hour for the global healthcare industry.</p>
+            <p>Healthcare data is nothing but any data that is related to the patient and the healthcare facilities such as medical records, scan and test reports, hospital records, etc. Different tools are used to collect this data. Some of the important tools and ways are electronic health records (EHRs), patient portals, master patient indexes (MPIs), online health-related mobile applications, etc. Not only does this help in data-driven informed decision-making, but it also helps in providing a personalized experience and treatment to the patients. </p>
+            </div>
+            <br><br>
+
+        <div class="card" style="width: 18rem; float: right; margin-top: 30px; margin-right: 30px;">
+        <img src="{% static 'healthcentre/images/tab.jpg' %}" class="card-img-top" alt="..." height="200" width="160">
+        <div class="card-body">
+            <p class="card-text">"In the era of data analytics, medical decisions are not just based on instincts but on insights."</p>
+        </div>
+        </div>
+
+            <div style="height: auto; width: 70%; padding: 18px; letter-spacing: 1.3px;">
+           <h3>Applications of Healthcare Data Analytics</h3>
+           Healthcare analytics has helped millions of healthcare professionals to better take care of their patients alongside reducing operational costs and saving time. 
+            <ul type="disc">
+            <li><strong>Staffing Prediction:</strong> One of the major concerns that worries healthcare facilities is the allocation of nurses and other staff for a particular patient in a particular period of time. Allocating too many workers is going to shoot up the labor costs. </li>
+            <li><strong>Electronic Health Records (EHRs)</strong>The major benefit of using healthcare data analytics is the utilization of the large amount of data lying here and there. EHRs are a means to store patient-related data in an organized manner. They are like digital records that can be accessed anytime by the concerned parties for the patient’s treatment. EHRs usually store data such as past medical history, allergies, lab results, doctors’ diagnoses, etc.</li>
+            <li><strong>Strategic Planning</strong> </strong> Data analytics has always helped organizations in strategic decision-making. The same applies to healthcare data analytics. The managers of healthcare facilities can effectively manage the treatment facilities and serve maximum possible patients with the help of data-driven strategic planning. </li>
+            <li><strong>Fraud Reduction</strong> Healthcare analytics has not only helped in predictions and decision-making but also in data security by identifying pattern changes in network traffic—predicting possible breaches, identifying vulnerabilities, etc. These developments in healthcare data analytics have also helped in smooth claim settlements and cash advances to patients. </li>
+            <li><strong>Improved Distribution and Medical Logistics </strong>The supply chain framework forms the backbone of the healthcare industry. A single instance of delayed delivery or mismanaged logistics can lead to life risks and critical problems. Healthcare analytics is a whole new approach to manage the distribution of medicine and healthcare appliances to facilities.</li>
+           
+            </ul> 
+            <br>
+
+            <div class="alert alert-warning" role="alert">
+            <strong>SUMMARY</strong><BR>
+           
+Data analytics in health facilitates efficient hospital operations, minimizes patient wait times, and empowers informed healthcare decisions for better patient outcomes.
+            </div>
+
+        </div>
+
+        <div class="card" style="width: 18rem; float: right; margin-top: 30px; margin-right: 30px;">
+        <img src="{% static 'healthcentre/images/lock.jpg' %}" class="card-img-top" alt="..." height="200" width="160">
+        <div class="card-body">
+            <p class="card-text">"The health of communities depends on our ability to extract wisdom from healthcare data."/p>
+        </div>
+        </div>
+        
+        <div style="height: auto; width: 70%; padding: 18px; letter-spacing: 1.3px;">
+            <h3>Ethical Considerations:</h3>
+            While data science and data analytics offer incredible potential, ethical considerations are paramount. Privacy concerns, informed consent, and data security are essential factors. Striking a balance between utilizing patient data for improving health outcomes and respecting individuals' privacy is crucial. A survey found that 85% of respondents were more likely to share their health data if they trusted that it would be used responsibly.
+           
+           <p>The future holds exciting possibilities at the nexus of data science, data analytics, and health. Precision medicine is an emerging trend, tailoring treatments based on individual genetic and lifestyle data. With advancements in genomic sequencing and personalized therapy, patients can experience higher treatment success rates. This trend is depicted in [Visual], showcasing how personalized treatments lead to improved patient outcomes.</p>
+            <br>
+            
+            <br>
+            <h4>Conclusion</h4>
+            <p>Data science and data analytics have reshaped the healthcare landscape, fostering better patient outcomes, more efficient operations, and informed decision-making. As we journey into a future guided by precision medicine and responsible data usage, staying informed about these advancements empowers individuals to make data-driven choices for their health.</p>
+        </div>
+
+    </div>
+
+    
+    <br><br><br>
+    <footer>
+        <p>&copy; 2023 Proactive Living. All rights reserved.</p>
+    </footer>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

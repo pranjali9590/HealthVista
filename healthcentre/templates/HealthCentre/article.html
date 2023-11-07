@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Article</title>
+    <link rel="stylesheet" href="{% static 'css/styles2.css' %}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        .article {
+            margin-bottom: 20px;
+        }
+        .article h2 {
+            color: #333;
+        }
+        .article p {
+            color: #666;
+        }
+        .article img {
+            max-width: 100%;
+            margin-bottom: 10px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body background="{% static 'healthcentre/images/22.jpg' %}" style="background-size: auto auto;">
+    <header>
+        <h1>Articles</h1>
+    </header>
+    <div class="container">
+        <div class="article">
+            <h2>Boosting Immunity: Natural Remedies</h2>
+           
+            
+            <img src="{% static 'healthcentre/images/article_1.jpg' %}" alt="Article Image">
+            <p>Discover effective natural ways to boost your immune system and stay healthy.</p>
+            <a href="{% url 'article_1' %}" class="btn">Read More</a>
+        </div>
+        <div class="article">
+            <h2>Yoga and Meditation for Stress Relief</h2>
+            <img src="{% static 'healthcentre/images/article_2.jpg' %}" alt="Article Image">
+            <p>Learn how practicing yoga and meditation can help reduce stress and promote relaxation.</p>
+            <a href="{% url 'article_2' %}" class="btn">Read More</a>
+            
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Professional Article. All rights reserved.</p>
+    </footer>
+</body>
+</html>

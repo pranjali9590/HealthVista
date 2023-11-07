@@ -1,0 +1,109 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body background="{% static 'healthcentre/images/22.jpg' %}" style="background-size: auto auto;">
+    <br>
+    <h1><center> “ To Keep The Body In Good Health Is A Duty, Otherwise We Shall Not Be Able To Keep Our Mind Strong And Clear.”</center> </h1>
+    <br>
+    <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="https://source.unsplash.com/2400x700/?diet,salad" class="d-block w-100" alt="..." height="500" width="100%" >
+        </div>
+        <div class="carousel-item">
+        <img src="https://source.unsplash.com/2400x700/?health,obesity" class="d-block w-100" alt="..." height="500" width="100%">
+        </div>
+        <div class="carousel-item">
+        <img src="https://source.unsplash.com/2400x700/?salad,healthyfood" class="d-block w-100" alt="..." height="500" width="100%">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+    <br>
+    <h2> &nbsp;&nbsp; Here are few diet plans you can follow !!!!</h2>
+    <div class="row">
+
+    <div class="col-md-3 my-3">
+    <div class="card" style="width: 18rem; left: 25px;">
+    <img src="https://source.unsplash.com/2400x700/?Ketogenicdiet,diet" class="card-img-top" height="200" width="150">
+    <div class="card-body">
+        <h5 class="card-title">Ketogenic Diet</h5>
+        <p class="card-text">The ketogenic diet involves consuming a very low amount of carbohydrates and replacing them with fat to help your body burn fat for energy.</p>
+        <a href="{% url 'try1' %}" class="btn btn-primary">Read More</a>
+    </div>
+    </div>
+    </div>
+    
+    <div class="col-md-3 my-3">
+    <div class="card" style="width: 18rem; left: 25px;">
+    <img src="https://source.unsplash.com/2400x700/?MediterraneanDiet,salad" class="card-img-top" height="200" width="150">
+    <div class="card-body">
+        <h5 class="card-title">Mediterranean Diet</h5>
+        <p class="card-text">Rich in fruits, vegetables, whole grains, and heart-healthy fats, the Mediterranean diet is both delicious and nutritious. It may help manage your weight, protect your heart.</p>
+        <a href="#" class="btn btn-primary">Read More</a>
+    </div>
+    </div>
+    </div>
+
+    <div class="col-md-3 my-3">
+    <div class="card" style="width: 18rem; left: 25px; ">
+    <img src="https://source.unsplash.com/2400x700/?Veganism,vegetables" class="card-img-top" height="200" width="150">
+    <div class="card-body">
+        <h5 class="card-title">Veganism</h5>
+        <p class="card-text">A vegan diet, or veganism, tends to omit animal products for ethical, health, or environmental reasons. It also helps in reducing weight and many health related diseases.</p>
+        <a href="{% url 'vegan' %}" class="btn btn-primary">Read More</a>
+    </div>
+    </div>
+    </div>
+
+    <div class="col-md-3 my-3">
+    <div class="card" style="width: 18rem; left: 25px;">
+    <img src="https://source.unsplash.com/2400x700/?glutenfree,diet" class="card-img-top" height="200" width="150">
+    <div class="card-body">
+        <h5 class="card-title">Gluten-Free Diet</h5>
+        <p class="card-text">The protein gluten is found in items like wheat products, beer, and pasta. It may cause digestive symptoms in some people, including those with celiac disease.</p>
+        <a href="{% url 'gluten' %}" class="btn btn-primary">Read more</a>
+    </div>
+    </div>
+    </div>
+
+    <div class="col-md-3 my-3" style="margin-left: 320px;">
+    <div class="card" style="width: 18rem; left: 25px;">
+    <img src="https://source.unsplash.com/2400x700/?lowcarbdiet,diet" class="card-img-top" height="200" width="150">
+    <div class="card-body">
+        <h5 class="card-title">Low Carb Diet</h5>
+        <p class="card-text">People often use low carb diets to promote weight loss and stabilize blood sugar levels.Low carb diets typically limit foods high in carbs or added sugar.</p>
+        <a href="#" class="btn btn-primary">Read more</a>
+    </div>
+    </div>
+    </div>
+
+    <div class="col-md-3 my-3">
+    <div class="card" style="width: 18rem; left: 25px;">
+    <img src="https://source.unsplash.com/2400x700/?IntermittentFasting,fasting" class="card-img-top" height="200" width="150">
+    <div class="card-body">
+        <h5 class="card-title">Intermittent Fasting</h5>
+        <p class="card-text">Intermittent fasting is an eating plan that switches between fasting and eating on a regular schedule. It is a way to manage your weight and prevent disease.</p>
+        <a href="#" class="btn btn-primary">Read more</a>
+    </div>
+    </div>
+    </div>
+    </div>
+    <br><br><br><br><br><br>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>

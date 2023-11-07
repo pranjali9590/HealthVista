@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/comm.css' %}">
+    <title>Five Card Website</title>
+</head>
+<body background="{% static 'healthcentre/images/22.jpg' %}" style="background-size: auto auto;">
+    <div class="card-container">
+        <div class="card">
+            <h1>Calori Tracker</h1>
+            <h2> Monitor and manage your daily caloric intake and expenditure to support your health and fitness goals.</h2>
+            <ul>
+                <li>Your daily calories consumption should be between 1500 to 3000</li>
+                <li>Monitors energy intake for informed, balanced dietary choices and goals.</li>
+                <li>Calorie regulation ensures energy balance, weight control, and overall health through informed dietary choices.</li>
+            </ul>
+            <button><a style="color: white; text-decoration: none;" href="{% url 'pedict:calories' %}">Check</a></button>
+        </div>
+
+        <div class="card">
+            <h1>BMI</h1>
+            <h2>BMI calculator evaluates weight status, aiding health assessment and disease prevention strategies effectively.</h2>           
+            <ul>
+                <li>Your BMI range should be between 18.5 and 24.9</li>
+                <li>Enhances portion awareness, fostering mindful eating habits.</li>
+                <li>Supports weight management by quantifying energy intake and expenditure</li>
+            </ul>
+            <button><a style="color: white; text-decoration: none;" href="{% url 'bmi' %}">Check</a></button>
+        </div>
+
+        <div class="card">
+            <h1>Period Tracker</h1>
+            <h2>Breaks taboos, fosters open conversations, and promotes body positivity.</h2>
+            <ul>
+                <li>Tracks menstrual patterns, aiding early detection of irregularities or health concerns.</li>
+                <li>Emotional well-being, guidance, and mood pattern recognition.</li>
+                <li>Health records, condition management, personalized care, and informed discussions.</li>
+            </ul>
+            <button><a style="color: white; text-decoration: none;" href="{% url 'np1' %}">Check</a></button>
+        </div>
+
+        <div class="card">
+            <h1>Sleep Tracker</h1>
+            <h2>Quality sleep vital for physical health, cognitive function, emotional well-being, and overall daily performance.</h2>
+            <ul>
+                <li>Monitor sleep patterns, detect issues, and improve overall sleep quality.</li>
+                <li>Unique sleep data aids identifying sleep disorders like sleep apnea, leading to timely medical intervention.</li>
+                <li> Insights into sleep cycles optimize rest, enhancing memory, concentration, and overall cognitive function.</li>
+            </ul>
+            <button><a style="color: white; text-decoration: none;" href="{% url 'sp' %}">Check</a></button>
+        </div>
+
+        <div class="card">
+            <h1>Water Tracker</h1>
+            <h2>Hydration essential for bodily functions, energy, skin health, digestion, and overall well-being. Stay hydrated always.</h2>
+            <ul>
+                <li>Promotes hydration, supports bodily functions, and aids digestion and detoxification.</li>
+                <li>Prevents dehydration, optimizes skin health, and boosts energy levels throughout the day.</li>
+                <li>Tracks intake, encourages healthy habits, and ensures sufficient daily water consumption.</li>
+            </ul>
+            <button><a style="color: white; text-decoration: none;" href="{% url 'water' %}">Check</a></button>
+        </div>
+    </div>
+    <br><br><br><br>
+</body>
+</html>

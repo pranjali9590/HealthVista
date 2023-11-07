@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style4.css' %}">
+    <title>Vegan Diet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        .container {
+    position: relative; /* Create a stacking context for pseudo-element */
+    }
+
+    .container::before {
+        content: "";
+        background-image:url(static/images/vegan.jpg); /* Replace with your image */
+        opacity: 0.7; /* Adjust the opacity as needed */
+        position: absolute;
+        background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; /* Place the pseudo-element below the content */
+    }
+
+    /* Additional styling for the content */
+    h1, p {
+        position: relative; /* Ensure content is above the pseudo-element */
+        z-index: 1;
+    }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" style="width: 18rem; float: right; margin-top: 30px; margin-right: 30px;">
+        <img src="https://source.unsplash.com/2400x700/?exercise,diet" class="card-img-top" alt="..." height="200" width="160">
+        <div class="card-body">
+            <p class="card-text">“I hated every minute of training, but I said, 'Don't quit. Suffer now and live the rest of your life as a champion.” - Muhammad Ali</p>
+        </div>
+        </div>
+    <div style="height: auto; width: 70%; padding: 18px; letter-spacing: 1.3px;">
+        <h1>Vegan Diet</h1>
+        <h2>The Vegan Diet: A Detailed Beginner's Guide to Keto</h2>
+        <p>A vegan diet, or veganism, tends to omit animal products for ethical, health, or environmental reasons.</p>
+        <p>Once considered a niche diet, veganism has gone mainstream — so much so that the number of people following a 
+            vegan diet has increased by 350% in the last decade, according to research from the U.K. 
+            By definition, veganism is a way of living in which people exclude, as much as possible, all forms of animal exploitation and cruelty.</p>
+        
+        <p>Here is a detailed beginner's guide to the vegan diet.</p>
+    </div>
+    <br><br>
+
+            <div style="height: auto; width: 70%; padding: 18px; letter-spacing: 1.3px;">
+            <h2>What is veganism?</h2>
+            <p>According to the Vegan Society, the term “vegan” was coined back in 1944 by a small group of vegetarians who broke away from the Leicester 
+                Vegetarian Society in England to form the Vegan Society.
+In addition to refraining from eating meat, they chose not to consume dairy, eggs, or any other products of animal origin</p>
+            
+            <p>According to the latest definition from the Vegan Society, veganism is “a philosophy and way of living which seeks to exclude
+                 — as far as is possible and practicable — all forms of exploitation of, and cruelty to, animals for food, clothing, or any other 
+                 purposes.”</p>
+            <br>            
+            </div>
+
+    
+            <div class="alert alert-warning" role="alert" style="height: auto; width: 70%; padding: 18px; letter-spacing: 1.3px;">
+            <strong>SUMMARY</strong><BR>
+                Veganism is a lifestyle that excludes all animal products and attempts to limit animal cruelty and exploitation as much as possible.
+            </div>
+
+            <br><br>
+
+            <div class="card" style="width: 18rem; float: right; margin-top: 30px; margin-right: 30px;">
+            <img src="https://source.unsplash.com/2400x700/?gym,diet" class="card-img-top" alt="..." height="200" width="160">
+            <div class="card-body">
+                <p class="card-text">“Workout till you feel that pain and soreness in muscles. This one is good pain. No pain, no gain.” - Invajy</p>
+            </div>
+            </div>
+
+            <div style="height: auto; width: 70%; padding: 18px; letter-spacing: 1.3px;">
+            <h2>Why do people go vegan?</h2>
+            <p>People generally choose to avoid animal products for one or more of the following reasons.</p>
+            <ul type="disc">
+            <li><strong>Ethics:</strong> Ethical vegans strongly believe that all creatures have a right to life and freedom.
+They view all animals as conscious beings that, just like humans, wish to avoid pain and suffering</li>
+            <li><strong>Health:</strong> Some people choose a vegan diet for its potential health benefits.
+Diets high in meat especially red meat have been linked to cancer, heart disease, and type 2 diabetes.Lowering your intake of animal products in favor of more plant-based options may also improve your digestion and reduce your risk of Alzheimer’s disease</li>
+            <li><strong>Environment:</strong> People may also choose to avoid animal products in an attempt to limit their environmental impact.
+ According to recent data, animal agriculture heavily contributes to greenhouse gas emissions (GHGEs), which cause climate change.
+                Meat eaters are thought to be responsible for 2–2.5 times more GHGEs than people following a vegan diet. This number is based on self-reported dietary patterns in the U.K.</li>
+            </ul> 
+            <br>Vegan diets tend to be low in these nutrients:
+            <ul>
+  <li>vitamin B12</li>
+  <li>vitamin D</li>
+  <li>calcium</li>
+  <li>zinc</li>
+  <li>iodine</li>
+  <li>selenium</li>
+            </ul> People on vegan diets sometimes take supplements to provide nutrients they may not get enough of in their diet.
+        </div>
+
+        <br><br>
+
+        <div class="card" style="width: 18rem; float: right; margin-top: 30px; margin-right: 30px;">
+        <img src="https://source.unsplash.com/2400x700/?fruits,diet" class="card-img-top" alt="..." height="200" width="160">
+        <div class="card-body">
+            <p class="card-text">The last three or four reps is what makes the muscle grow. This area of pain divides a champion from someone who is not a champion.” - Arnold Schwarzenegger</p>
+        </div>
+        </div>
+
+            <div style="height: auto; width: 70%; padding: 18px; letter-spacing: 1.3px;">
+            <h2>What do vegans eat?</h2>Here are some essential foods people on a vegan diet tend to eat and avoid.
+            <h3>TFoods that vegans eat</h3>
+            Avoiding animal products doesn’t restrict you to eating salads and tofu alone. There’s a wide variety of delicious foods you can eat on a vegan diet.
+Here are a few ideas:
+
+            <ul type="disc">
+            <li><strong>Beans, peas, and lentils: </strong> such as red, brown, or green lentils; chickpeas; split peas; black-eyed peas; black beans; white beans; and kidney beans
+            </li>
+            <li><strong>Soy products:</strong> such as fortified soy milk, soybeans, and products made from them, such as tofu, tempeh, and natto </li>
+            <li><strong>Nuts:</strong>such as peanuts, almonds, cashews, and their butters</li>
+            <li><strong>Seeds:</strong> such as sunflower seeds, sesame seeds, and their butters, as well as flaxseed, hemp seeds, and chia seeds.</li>
+            <li><strong>Whole grains: </strong> such as quinoa, whole wheat, whole oats, and whole grain brown or wild rice, as well as products made from these foods, such as whole grain bread, crackers, and pasta</li>
+            <li><strong>Starchy vegetables: </strong> such as potatoes, sweet potatoes, corn, squash, beets, and turnips</li>
+            <li><strong>Nonstarchy vegetables: </strong>  such as broccoli, cabbage, asparagus, radishes, and leafy greens; these may be raw, frozen, canned, dried, or pureed</li>
+            <li><strong>Other plant-based foods: </strong> such as algae, nutritional yeast, fortified plant milks and yogurts, and maple syrup</li>   
+        </ul> 
+            <br>
+            <h3>TFoods that vegans avoid</h3>
+            Vegans avoid all foods of animal origin. These include:
+
+            <ul type="disc">
+            <li><strong>Meat and fish:  </strong> such as beef, chicken, duck, fish, and shellfish
+            </li>
+            <li><strong>Eggs:</strong>whole eggs and foods that contain them, such as bakery products </li>
+            <li><strong>Dairy:</strong> milk, cheese, butter, and cream, as well as foods made using these ingredients</li>
+            <li><strong>Other animal-derived ingredients:</strong> such as honey, albumin, casein, carmine, gelatin, pepsin, shellac, isinglass, and whey</li>
+      
+        </ul> 
+
+            <div class="alert alert-warning" role="alert">
+            <strong>SUMMARY</strong><BR>
+                Vegans eat a variety of foods. They typically replace meat, eggs, and dairy with a variety of plant-based alternatives, which provides versatility to a vegan diet.
+            </div>
+
+        </div>
+
+        <br><br>
+
+        <div class="card" style="width: 18rem; float: right; margin-top: 30px; margin-right: 30px;">
+        <img src="https://source.unsplash.com/2400x700/?salad,diet" class="card-img-top" alt="..." height="200" width="160">
+        <div class="card-body">
+            <p class="card-text">“Just believe in yourself. Even if you don't, just pretend that you do and at some point, you will.” - Venus Williams</p>
+        </div>
+        </div>
+
+            <div style="height: auto; width: 70%; padding: 18px; letter-spacing: 1.3px;">
+            <h2>Vegan dairy alternatives</h2>
+            Today, vegan dairy alternatives are widely available. These include milk made from soy, oats, and peas, as well as cheeses made from cashews or coconut.
+
+These foods are appropriate for both vegan and dairy-free diets, and their flavor and texture are comparable to those of their dairy-containing counterparts.
+
+Some of the most popular vegan dairy alternatives include:
+            <ul type="disc">
+            <li><strong>Cheese: </strong> shreds and slices made using coconut, almonds, cashews, soy, or pea protein
+            </li>
+            <li><strong>Milk:  </strong>made from oats, hemp, rice, soy, peas, macadamia nuts, sunflower seeds, almonds, or cashews.</li>
+            <li><strong>fruit:</strong> all fruit, except small portions of berries like strawberries</li>
+            <li><strong>Cream cheese and sour cream:</strong>made from beans or cashews</li>
+            <li><strong>Butter: </strong>  made using vegetable oil, cashews, or pea protein
+            </li>
+            <li><strong>Ice cream:</strong>  made from soy, oats, cashews, or coconut milk
+            </li>
+            
+            </ul> 
+            <br>
+
+            <div class="alert alert-warning" role="alert">
+            <strong>SUMMARY</strong><BR>
+                A growing number of vegan dairy alternatives are available, including nondairy options for milk, cheese, cream cheese, sour cream, butter, and ice cream. These are suitable for people on a dairy-free or vegan diet.
+            </div>
+            </div>
+            <br><br>
+
+        <div class="card" style="width: 18rem; float: right; margin-top: 30px; margin-right: 30px;">
+        <img src="https://source.unsplash.com/2400x700/?running,diet" class="card-img-top" alt="..." height="200" width="160">
+        <div class="card-body">
+            <p class="card-text">“The hard days are the best because that's when champions are made, so if you push through, you can push through anything.” - Dana Vollmer</p>
+        </div>
+        </div>
+
+            <div style="height: auto; width: 70%; padding: 18px; letter-spacing: 1.3px;">
+            <h2>Foods to eat</h2>
+            A vegan diet can be viewed as the strictest form of vegetarianism.
+
+Veganism is currently defined by the Vegan Society as a way of living that attempts to exclude all forms of animal exploitation and cruelty as much as possible.
+So, a vegan diet not only excludes animal flesh, but also dairy, eggs, and other ingredients that come from animals. These include:
+            <ul type="disc">
+            <li><strong>gelatin</strong></li>
+            <li><strong>honey</strong> </li>
+            <li><strong>carmine </strong> </li>
+            <li><strong>pepsin</strong> </li>
+            <li><strong>shellac</strong> </li>
+            <li><strong>albumin</strong> </li>
+            <li><strong>whey </strong></li>
+            <li><strong>casein </strong></li>
+            <li><strong>some forms of vitamin D3 </strong></li>
+            </ul> 
+            <br>
+            As a result, they seek to avoid all animal by-products, regardless of the conditions in which animals are bred or housed.
+
+            The desire to avoid all forms of animal exploitation is why vegans choose to forgo dairy and eggs — products that many vegetarians have no problem consuming.
+            <div class="alert alert-warning" role="alert">
+            <strong>SUMMARY</strong><BR>
+                Vegetarians and vegans differ in their beliefs regarding the use of animals by humans. This is why some vegetarians may consume animal-derived products, whereas vegans do not.
+            </div>
+
+        </div>
+
+       
+    
+    <br><br>
+    <footer>
+        <p>&copy; 2023 Proactive Living. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

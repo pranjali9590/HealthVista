@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--replace title with name of website-->
+    <title>Health Newsletter</title>
+
+    <link rel="stylesheet" href="{% static 'css/styles2.css' %}">
+    
+</head>
+<body background="{% static 'healthcentre/images/22.jpg' %}" style="background-size: auto auto;">
+
+<header>
+    <nav>
+        <ul>
+            <!-- replace # with links to home page ,about and contact-->
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'article' %}">Articles</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="{% url 'contactus' %}">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="logo">
+        <!-- replace with title of website-->
+        <h1>Health<span>Newsletter</span></h1>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h2><bold>Your Source for Health and Wellness</bold></h2>
+        <p><bold>Stay updated with the latest health articles, tips, and remedies.</bold></p>
+        <a href="{% url 'login' %}" class="btn">Login/Register</a>
+    </div>
+</section>
+
+<section class="articles">
+    <div class="card" style="width: 20rem; float: right; margin-top: 30px; margin-right: 30px;">
+            <img src="https://source.unsplash.com/2400x700/?meditation,yoga" class="card-img-top" alt="..." height="250" width="300">
+            <div class="card-body">
+                <p class="card-text">Yoga enhances flexibility and strength while meditation cultivates mental clarity and inner peace. Both practices promote overall well-being by reducing stress and improving mindfulness.</p>
+            </div>
+            </div>
+    <div class="container">
+        <h3>Featured Articles</h3>
+        <div class="article">
+            <img src="{% static 'healthcentre/images/article_1.jpg' %}" alt="Article 1">
+            <h4>Boosting Immunity/Yoga and Meditation</h4>
+            <p>Discover effective natural ways to boost your immune system and stay healthy.</p>
+            <p>Learn how practicing yoga and meditation can help reduce stress and promote relaxation.</p>
+            <a href="{% url 'article' %}" class="btn">Read More</a>
+        </div>
+    </div>
+        <div class="card" style="width: 20rem; float: right; margin-top: 30px; margin-right: 30px;">
+            <img src="https://source.unsplash.com/2400x700/?consitency,salad" class="card-img-top" alt="..." height="250" width="300">
+            <div class="card-body">
+                <p class="card-text">“Workout till you feel that pain and soreness in muscles. This one is good pain. No pain, no gain.” - Invajy</p>
+            </div>
+            </div>
+    <div class="container">
+        <div class="article">
+            <img src="{% static 'healthcentre/images/art2.png' %}" alt="Article 2" width="500" height="400">
+            <h4>Diet plans and weekly Charts</h4>
+            <p>Discover most effective way to mantain your body according to your interest .</p>
+            <p>Detox your body from stress and improve your eatings habbit for your better health.</p>
+            <a href="{% url 'trys' %}" class="btn">Read More</a>
+        </div>
+    </div>
+        <div class="card" style="width: 20rem; float: right; margin-top: 30px; margin-right: 30px;">
+            <img src="https://source.unsplash.com/2400x700/?turmeric,wateringlass" class="card-img-top" alt="..." height="250" width="300">
+            <div class="card-body">
+                <p class="card-text">Home remedies are natural, accessible solutions for various health concerns. Using items like honey, garlic, and tea, they offer alternatives to over-the-counter medications, emphasizing holistic wellness and self-care.</p>
+            </div>
+        </div>
+    <div class="container">
+        <div class="article">
+            <img src="{% static 'healthcentre/images/art1.png' %}" alt="Article 2"  width="500" height="400">
+            <h4>Home Remedies for common disease</h4>
+            <p>Discover the secreat of medecines near you and deal your common disease on your own .</p>
+            <p>Home remedies offer natural solutions for common ailments, using items like honey, ginger, aloe vera, and turmeric, promoting well-being.</p>
+            <a href="{% url 'rem' %}" class="btn">Read More</a>
+        </div>
+    </div>
+    
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2023 Health Newsletter. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

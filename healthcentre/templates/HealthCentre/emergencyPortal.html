@@ -1,0 +1,97 @@
+{% extends "healthcentre/layout.html" %}
+
+{% block title %}
+HealthVista
+{% endblock%}
+
+
+{% block bodytag %}
+
+  {% load static %}
+  <body>
+
+{% endblock %}
+
+{% block body %}
+
+    <br>
+
+    <h1 style="text-align:center;color:red" class = "display-4">
+        EMERGENCY
+
+        <li class="dropdown-divider" style="margin-left:25%;margin-right:25%;border-color:red"></li>
+
+        <p class="lead">
+            Either choose location from dropdown or type in text.
+            <br>
+            NO LOGIN REQUIRED
+        </p>
+
+    </h1>
+
+    {% if message %}
+        <div style="text-align:center;margin:0 auto;"class="alert alert-warning" role="alert">
+            {{ message }}
+        </div>
+    {% endif %}
+
+    <hr>
+
+    <div class="container center_div" align ="center" width="300px">
+        <form align="center" action = "{% url 'emergency' %}" method = "post">
+            {% csrf_token %}
+
+            <br>
+
+            <div class="form-group">
+                <select class="form-control" name="emergencyLocation">
+                    <option>Banglore Urban    </option>
+                    <option>Banglore Rural    </option>
+                    <option>Kolar             </option>
+                    <option>Chikkaballapura   </option>
+                    <option>Ramanagara        </option>
+                    <option>Tumakuru          </option>
+                    <option>Chitradurga       </option>
+                    <option>Davanagere        </option>
+                    <option>Shivamogga        </option>
+                </select>
+            </div>
+
+        <br>
+
+        <button type="submit" class="btn btn-warning btn-lg" >CALL AMBULANCE</button>
+
+        </form>
+    </div>
+
+    <hr>
+
+    <div class="container center_div" align ="center" width="300px">
+        <form align="center" action = "{% url 'emergency' %}" method = "post">
+            {% csrf_token %}
+
+            <br>
+
+            <div class="form-group">
+
+                <br>
+                <div class="form-row">
+                    <div class="col-12">
+                        <input name="emergencyLocation" type="text" class="form-control" placeholder="Otherwise type location here.">
+                    </div>
+                </div>
+                <br>
+
+            </div>
+
+            <br>
+            <button type="submit" class="btn btn-warning btn-lg" >CALL AMBULANCE</button>
+        </form>
+    </div>
+
+    <hr>
+
+    <br>
+
+
+{% endblock %}

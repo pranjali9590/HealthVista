@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/rem.css' %}"> 
+    <script src="{% static 'healthcentre/javascript/rem1.js' %}"></script>
+</head>
+
+
+<body background="{% static 'healthcentre/images/22.jpg' %}" style="background-size: auto auto;"> 
+ <header>
+    <nav>
+        <ul>
+            <!-- replace # with links to home page ,about and contact-->
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'rem' %}">Remedies</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="{% url 'contactus' %}">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="logo">
+        <h1 style="color:white"><b>HealthVista</b></h1>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h2><bold>Your Source for Health and Wellness</bold></h2>
+        <p><bold>Stay updated with the latest health articles, tips, and remedies.</bold></p>
+    </div>
+</section>
+
+<main>
+    <section id="ailment-selector">
+        <h2>Select Ailment</h2>
+        <select id="ailment-select">
+            <option value="cold">Cold</option>
+            <option value="cough">Cough</option>
+            <option value="fever">Fever</option>
+        </select>
+        <button id="get-remedies" class="btn">Get Remedies</button>
+
+    </section>
+    <section id="remedies">
+        <div id="remedies-list"></div>
+    </section>
+</main>
+<br><br><br><br>
+</body>
+</html>

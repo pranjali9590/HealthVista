@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+{% load static %}
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthVista</title>
+    <!-- Linking Google font link for icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="{% static 'css/styles3.css' %}">
+  </head>
+  <body background="{% static 'healthcentre/images/11.jpg' %}">
+     <center><div class="row container" style="font-size: 36px; margin-bottom: 16px; color: #fff; display: flex; min-height: 100vh; height: 100%; width: 90%; padding: 0 60px; gap: 30px; justify-content: space-between;">
+          <div class="column" style="color: black;">
+            <h2 style="margin-left: 5rem;">"HealthVista: Nurturing Wellness Through  <br />Proactive and Positive Living"</h2>
+            <p style="margin-left: 10rem;">Proactive wellness cultivates strong bonds, prioritizes preventive health measures, encourages open communication, and fosters a supportive environment, enhancing overall physical, mental, and emotional well-being.</p>
+          </div>
+        </div></center>
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="{% static 'healthcentre/images/logo1.png' %}" alt="logo">
+        <h2>HealthVista</h2>
+      </div>
+      <ul class="links">
+        <h4>Main Menu</h4>
+        <li>
+          <span class="material-symbols-outlined">dashboard</span>
+          <a href="{% url 'main' %}">Dashboard</a>
+        </li>
+        <li>
+          <span class="material-symbols-outlined">show_chart</span>
+          <a href="{% url 'index1' %}">Health Centre</a>
+        </li>
+        <li>
+          <span class="material-symbols-outlined">flag</span>
+          <a href="{% url 'pedict:home' %}">Report Analyzer</a>
+        </li>
+        <hr>
+        <h4>Advanced</h4>
+        <li>
+          <span class="material-symbols-outlined">monitoring</span>
+          <a href="http://localhost:8501">RevAI</a>
+        </li>
+        
+        <li>
+          <span class="material-symbols-outlined">group</span>
+          <a href="{% url 'article_homepage' %}">NewsLetter </a>
+        </li>
+        <li>
+          <span class="material-symbols-outlined">pacemaker</span>
+          <a href="{% url 'comm' %}">Body Regulation</a>
+        </li>
+        <li>
+          <span class="material-symbols-outlined">ambient_screen</span>
+          <a href="{% url 'mg' %}">Memory Game</a>
+        </li>
+        
+        
+        <hr>
+        <h4>Account</h4>
+        <li>
+          <span class="material-symbols-outlined">person</span>
+          <a href="{% url 'login' %}">Login/Register</a>
+        </li>
+        <li>
+          <span class="material-symbols-outlined">bar_chart</span>
+          <a href="{% url 'ov' %}">Overview</a>
+        </li>
+        <li>
+          <span class="material-symbols-outlined">mail</span>
+          <a href="{% url 'contactus' %}">Contact</a>
+        </li>
+        <li class="logout-link">
+          <span class="material-symbols-outlined">logout</span>
+          <a href="{% url 'logout' %}">Logout</a>
+        </li>
+      </ul>
+    </aside>
+    <script src="{% static 'healthcentre/javascript/bot.js' %}" type="text/javascript"></script>
+  </body>
+</html>
